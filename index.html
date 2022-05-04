@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The basic language of the web: HTML</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav>
         <a href="blog.html">Blog</a>
         <a href="#">Challenges</a>
@@ -21,11 +22,11 @@
       <h1>📘 The Code Magazine</h1>
       <h2>The basic language of the web: HTML</h2>
 
-      <img src="laura-jones.jpg" alt="Profile" />
+      <img src="img/laura-jones.jpg" alt="Profile" />
 
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
-      <img src="post-img.jpg" alt="Image Screenshot" width="500" height="200" />
+      <img src="img/post-img.jpg" alt="Image Screenshot" width="500" height="200" />
 
       <!-- Second Header -->
       <p>
@@ -62,7 +63,7 @@
       </p>
 
       <!-- Fourth Header -->
-      <h4>Why should you learn html?</h4>
+      <h3>Why should you learn html?</h3>
       <p>
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
@@ -79,8 +80,29 @@
         <li>To have fun 😃</li>
       </ul>
 
+      <aside>
+        <h4>Related Posts</h4>
+        <ul id="posts">
+          <li>
+            <img src="img/related-1.jpg" height="100" width="100" />
+            <a href="#">How to learn web development</a>
+            <p class="related-author">By Jonas Schmedtmann</p>
+          </li>
+          <li>
+            <img src="img/related-2.jpg" height="100" width="100" />
+            <a href="#">The unknown power of CSS</a>
+            <p class="related-author">By Jim Dillon</p>
+          </li>
+          <li>
+            <img src="img/related-3.jpg" height="100" width="100" />
+            <a href="#">Why JavaScript is important</a>
+            <p class="related-author">By Matilda</p>
+          </li>
+        </ul>
+      </aside>
+
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
-    <footer>Copyright &copy; 2022, The Code Magazine</footer>
+    <footer><p id="copyright">Copyright &copy; 2022, The Code Magazine</p></footer>
   </body>
 </html>
